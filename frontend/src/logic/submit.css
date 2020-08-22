@@ -1,0 +1,75 @@
+.submit__button {
+   text-align: center;
+}
+
+.submit {
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 1px;
+    background-color: white;
+    font-weight: 500;
+
+    transition: background .4s, color .4s;
+    position: relative;
+    color: var(--font);
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.submit:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.submit__border_h:before,
+.submit__border_h:after,
+.submit__border_w:before,
+.submit__border_w:after {
+    display: block;
+    content: '';
+    position: absolute;
+    transition: background .4s;
+}
+
+.submit__border_h:before {
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.submit__border_h:after {
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.submit__border_w:before {
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 0;
+}
+
+.submit__border_w:after {
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+}
+
+.submit:hover
+.submit__border_h:before,
+.submit__border_h:after,
+.submit__border_w:before,
+.submit__border_w:after {
+    background-color: white;    
+}
+
+@media screen and (max-width: 1200px) {
+    .submit {
+        padding: 10px;
+    }
+}

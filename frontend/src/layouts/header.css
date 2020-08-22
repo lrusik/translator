@@ -1,0 +1,25 @@
+.header {
+    padding: 10px 0;
+    background-color: var(--primary);    
+    display: flex;
+    justify-content: center;
+}
+
+.header__inner {
+    max-width: 1440px;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1200px) {
+    .header__inner {    
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__submit {
+        padding: 10px;
+    }
+}
